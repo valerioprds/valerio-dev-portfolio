@@ -43,6 +43,20 @@
   font-size: 30px;
 }
 
+h1{
+  font-weight: bold;
+  font-size: 50px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+p  {
+  font-size: 20px;
+
+}
 /* Cards */
 .card {
   border-radius: 10px;
