@@ -30,9 +30,15 @@
   object-fit: cover;
   margin-bottom: 20px;
 }
+.custom-div h1 {
+  color: #0dcb14;
+  font-weight: bold;
+  font-size: 50px;
+}
 
-h1 {
-  font-size: bolder;
+.custom-div h2 {
+  font-weight: bold;
+  font-size: 30px;
 }
 
 /* Cards */
@@ -173,7 +179,7 @@ html {
   }
 }
 
-@media all and (max-width: 345px) {
+@media all and (max-width: 400px) {
   .custom-div {
     max-width: 90%;
   }
