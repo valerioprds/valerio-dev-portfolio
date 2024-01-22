@@ -6,10 +6,11 @@
         <a href="mailto:v.paradiso89@gmail.com">v.paradiso89&#64;gmail.com</a>.
       </p>
 
-      <form>
+      <form [formGroup]="form" action="javascript:void(0)" (submit)="send()">
         <div class="form-group">
           <label for="name">Name</label>
           <input
+            formControlName="from_name"
             type="text"
             class="form-control"
             id="name"
@@ -19,6 +20,7 @@
         <div class="form-group">
           <label for="email">Email</label>
           <input
+            formControlName="from_email"
             type="email"
             class="form-control"
             id="email"
@@ -28,6 +30,7 @@
         <div class="form-group">
           <label for="message">Message</label>
           <textarea
+            formControlName="message"
             class="form-control"
             id="message"
             rows="3"

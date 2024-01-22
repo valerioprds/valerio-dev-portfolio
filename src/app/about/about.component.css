@@ -208,7 +208,7 @@ html {
 
 /* Underline Animation for Navbar Links */
 .nav-link::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 2px;
@@ -221,7 +221,13 @@ html {
 }
 
 /* Smooth Scale Animation for All Interactive Elements */
-a:hover, button:hover, .fa-brands:hover, .mongodb:hover, .typescript:hover, .nextjs:hover, .tailwind:hover {
+a:hover,
+button:hover,
+.fa-brands:hover,
+.mongodb:hover,
+.typescript:hover,
+.nextjs:hover,
+.tailwind:hover {
   transition: transform 0.3s ease;
   transform: scale(1.1);
 }
