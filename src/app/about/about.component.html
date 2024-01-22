@@ -25,10 +25,10 @@
       <div class="navbar-collapse collapse" id="navbarsExample07">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#myProjects">My Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#myProjects">My Projects</a>
+            <a class="nav-link" href="#techStack">Tech Stack </a>
           </li>
           <li class="nav-item">
             <button class="nav-link" (click)="openContactDialog()">
@@ -103,13 +103,11 @@
     </div>
   </div>
   <!-- tech stack -->
-  <div class="bg-dark py-5 d-flex">
-    <div class="container tech-container  d-flex flex-column justify-content-center align-items-center">
-      <h2
-        class="display-5 fw-bold text-center text-white  "
-      >
-        Tech Stack
-      </h2>
+  <div class="bg-dark py-5 d-flex" id="techStack">
+    <div
+      class="container tech-container d-flex flex-column justify-content-center align-items-center"
+    >
+      <h2 class="display-5 fw-bold text-center text-white">Tech Stack</h2>
       <div class="col mt-2">
         <i class="fa-brands fa-angular" style="color: #fe0606"></i>
         <i class="fa-brands fa-html5" style="color: #cc5624"></i>
@@ -123,7 +121,6 @@
         <img src="/assets/typescript.png" class="typescript" alt="typescript" />
         <img src="/assets/next-js.svg" class="nextjs" alt="nextjs" />
         <img src="/assets/tailwind.png" class="tailwind" alt="tailwind" />
-
       </div>
     </div>
   </div>
