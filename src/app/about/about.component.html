@@ -4,12 +4,13 @@
     aria-label="Eighth navbar example"
   >
     <div class="container">
-      <a class="navbar-brand" href="#"
-        ><img
+      <a class="navbar-brand" href="#">
+        <img
           src="/assets/logo1.png"
           class="logo"
           alt="Logo Valerio Paradiso frontend"
-      /></a>
+        />
+      </a>
       <button
         class="navbar-toggler collapsed"
         type="button"
@@ -28,13 +29,40 @@
             <a class="nav-link" href="#myProjects">My Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#techStack">Tech Stack </a>
+            <a class="nav-link" href="#techStack">Tech Stack</a>
           </li>
           <li class="nav-item">
             <button class="nav-link" (click)="openContactDialog()">
               Contact
             </button>
           </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://www.linkedin.com/in/valerioparadiso/"
+              target="_blank"
+            >
+              <i
+                class="fa-brands social-links fa-linkedin"
+                style="color: #0a66c2"
+              ></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://github.com/valerioprds"
+              target="_blank"
+            >
+              <i
+                class="fa-brands social-links fa-github"
+                style="color: #e57010"
+              ></i>
+            </a>
+          </li>
+          <!-- Add other social links here if needed -->
         </ul>
       </div>
     </div>
