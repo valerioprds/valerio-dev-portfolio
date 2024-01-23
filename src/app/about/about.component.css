@@ -26,13 +26,11 @@
   transform: scale(1.1);
 }
 
-.social-links  {
- font-size: 30px;
+.social-links {
+  font-size: 30px;
 }
 
-.social-links:hover  {
-  border-bottom: none;
- }
+
 
 .custom-img {
   width: 250px;
@@ -215,7 +213,7 @@ html {
 }
 
 /* Underline Animation for Navbar Links */
-.nav-link::after {
+.link-effects::after {
   content: "";
   display: block;
   width: 0;
