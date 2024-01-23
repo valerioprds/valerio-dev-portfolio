@@ -11,12 +11,13 @@ import { ContactComponent } from '../contact/contact.component';
 })
 export class AboutComponent {
   constructor(private dialogRef: MatDialog) {}
-    openContactDialog() {
+  openContactDialog() {
     this.dialogRef.open(ContactComponent, {
       width: '800px',
       height: 'auto',
-      
+      position: {
+        top: '150px', // Adjust this value as needed
+      },
     });
   }
 }
-
