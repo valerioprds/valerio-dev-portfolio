@@ -1,9 +1,20 @@
 <div class="container bg-dark text-white">
   <div class="row">
     <div class="col-12">
+      <h3 class="text-center">Contact details</h3>
       <p class="contact-email">
-        You can also contact me by email at
-        <a href="mailto:v.paradiso89@gmail.com">v.paradiso89&#64;gmail.com</a>.
+        <i class="fa-regular fa-envelope"></i>
+        <a href="mailto:v.paradiso89@gmail.com"> v.paradiso89&#64;gmail.com</a>.
+      </p>
+
+      <!-- Added location and phone number -->
+      <p class="contact-location">
+        <i class="fa-solid fa-location-dot"></i>
+        <span id="location"> Barcelona</span>
+      </p>
+      <p class="contact-phone">
+        <i class="fa-solid fa-mobile-screen-button"></i
+        ><span id="phone"> +34 634671046</span>
       </p>
 
       <form [formGroup]="form" action="javascript:void(0)" (submit)="send()">
@@ -38,7 +49,7 @@
           ></textarea>
         </div>
         <div class="button-container text-center">
-          <button type="submit" class="btn btn-success m-4 text-center">
+          <button type="submit" class="btn btn-success m-4 btn-lg">
             Send
           </button>
         </div>

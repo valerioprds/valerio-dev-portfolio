@@ -13,9 +13,10 @@ export class AboutComponent {
   constructor(private dialogRef: MatDialog) {}
     openContactDialog() {
     this.dialogRef.open(ContactComponent, {
-      width: '900px',
+      width: '800px',
       height: 'auto',
+      
     });
-  } 
+  }
 }
 

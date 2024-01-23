@@ -1,12 +1,10 @@
-
-.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+/* Existing Styles */
+.form-control::placeholder {
   color: #888;
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }
+
 .contact-email {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  text-align: center;
   animation: fadeIn 2s;
 }
 
@@ -25,11 +23,6 @@
   color: #fff;
 }
 
-.btn-primary {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -37,4 +30,59 @@
   to {
     opacity: 1;
   }
+}
+
+/* New Styles */
+.container {
+  padding: 20px;
+}
+
+h3.text-center {
+  margin-bottom: 20px;
+  color: #0d6efd;
+  font-size: 24px;
+}
+
+/* .form-group {
+  margin-bottom: 15px;
+} */
+
+.form-group label {
+  color: #0d6efd;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.5);
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.contact-location,
+.contact-phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-location i,
+.contact-phone i {
+  margin-right: 8px;
+}
+
+/* Adjusting Font Awesome Icons */
+.fa-envelope,
+.fa-location-dot,
+.fa-mobile-screen-button {
+  color: #0d6efd;
 }
