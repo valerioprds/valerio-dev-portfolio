@@ -30,8 +30,6 @@
   font-size: 30px;
 }
 
-
-
 .custom-img {
   width: 250px;
   height: 250px;
@@ -60,8 +58,15 @@ h2 {
   font-size: 30px;
 }
 
+.about-me-link {
+  cursor: pointer;
+}
+
 p {
   font-size: 20px;
+}
+.tech-container {
+  width: 60%;
 }
 
 .tech-container .fa-brands {
@@ -73,6 +78,9 @@ p {
   width: 120px;
   height: 120px;
   margin-left: 20px;
+}
+.firebase {
+  margin-bottom: 25px;
 }
 
 .tech-container svg {
@@ -233,7 +241,8 @@ button:hover,
 .mongodb:hover,
 .typescript:hover,
 .nextjs:hover,
-.tailwind:hover {
+.tailwind:hover,
+.firebase:hover {
   transition: transform 0.3s ease;
   transform: scale(1.1);
 }
@@ -318,9 +327,6 @@ button:hover,
   }
 }
 
-
-
-
 @media all and (max-width: 400px) {
   .custom-div {
     max-width: 100%;
@@ -338,10 +344,6 @@ button:hover,
     height: 70px;
   }
 }
-
-
-
-
 
 @media all and (max-width: 320px) {
   .custom-div {
