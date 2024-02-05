@@ -1,54 +1,48 @@
+/* Keyframes for fadeIn effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0.9; /* Matching the initial state opacity */
+    transform: translateY(0);
+  }
+}
+
+/* Apply the fadeIn animation to cards */
 .card {
   border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0.9; /* Start with a slightly lower opacity for an initial state */
+  animation: fadeIn 1s ease-out; /* Apply fadeIn animation with duration of 1s */
 }
 
 .card:hover {
   box-shadow: 0 0 20px #4caf50;
+  transform: scale(1.05); /* Scale up the card slightly to draw attention */
+  opacity: 1; /* Fully fade in the card to make it stand out */
 }
 
 .card-img-top {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 100%;
-  height: 200px;
+  height: 200px; /* Consider making this adaptive or responsive */
 }
 
 .card-title {
   text-align: center;
   font-size: 1.4rem;
   font-weight: bold;
-  animation: fadeIn 1s ease-in;
+  animation: fadeIn 1s ease-in; /* This applies the animation but consider if you need it here as well */
 }
 
 .card-title:hover {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
+
 p {
-  font-size: 20px;
-}
-
-/* Swing Animation for Cards on Hover */
-
-
-.card:hover {
-  animation: swing 0.5s ease;
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.card.fade-in {
-  opacity: 0;
-  animation-name: fadeInUp;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  font-size: 20px; /* Ensure readability across devices */
 }
