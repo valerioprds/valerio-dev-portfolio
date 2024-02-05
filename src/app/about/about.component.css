@@ -177,22 +177,16 @@ html {
   animation: pulse 2s infinite;
 }
 
-/* Rotate and Scale Animation for Tech Icons */
-.tech-container .fa-brands,
-.mongodb,
-.typescript,
-.nextjs,
-.tailwind {
+/* Animation for Tech Icons */
+.tech-container i {
   transition: transform 0.5s ease;
 }
 
-.tech-container .fa-brands:hover,
-.mongodb:hover,
-.typescript:hover,
-.nextjs:hover,
-.tailwind:hover {
-  transform: rotate(360deg) scale(1.1);
+.tech-container i:hover {
+  transform: scale(1.1);
 }
+
+
 
 /* Swing Animation for Cards on Hover */
 @keyframes swing {
