@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { ContactComponent } from '../contact/contact.component';
 import { TechComponent } from "../tech/tech.component";
+import { ProjectsComponent } from "../projects/projects.component";
 
 @Component({
     selector: 'app-about',
     standalone: true,
     templateUrl: './about.component.html',
     styleUrl: './about.component.css',
-    imports: [MatDialogModule, TechComponent]
+    imports: [MatDialogModule, TechComponent, ProjectsComponent]
 })
 export class AboutComponent {
   constructor(private dialogRef: MatDialog) {}
