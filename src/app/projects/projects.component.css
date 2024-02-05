@@ -17,7 +17,7 @@
 
 .card-title {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   animation: fadeIn 1s ease-in;
 }
@@ -25,29 +25,30 @@
 .card-title:hover {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
+p {
+  font-size: 20px;
+}
 
 /* Swing Animation for Cards on Hover */
-@keyframes swing {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(10deg);
-  }
-  30% {
-    transform: rotate(-10deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-  70% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
+
 
 .card:hover {
   animation: swing 0.5s ease;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.card.fade-in {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
