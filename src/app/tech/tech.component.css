@@ -54,5 +54,15 @@ h2 {
 }
 
 .tech-container i:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
+
+
+.tech-container img {
+  transition: transform 0.5s ease;
+}
+
+.tech-container img:hover {
+  transform: scale(1.2);
+}
+
