@@ -53,7 +53,10 @@ h1 {
   font-size: 50px;
 }
 
-
+.about-me {
+  color: #beb9b9;
+  line-height: 25px;
+}
 
 .about-me-link {
   cursor: pointer;
@@ -63,17 +66,8 @@ p {
   font-size: 20px;
 }
 
-
-
-
-
-
-
-
 h1:hover,
 h2:hover,
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -89,10 +83,6 @@ html {
 
 /* New Animations and Effects */
 /* Pulse Animation for Buttons */
-
-
-
-
 
 /* Swing Animation for Cards on Hover */
 @keyframes swing {
