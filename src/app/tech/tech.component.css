@@ -3,15 +3,6 @@ h2 {
   font-size: 30px;
 }
 
-.tech-container {
-  width: 60%;
-}
-
-.tech-container .fa-brands {
-  font-size: 50px;
-  margin-left: 50px;
-}
-
 .mongodb {
   width: 120px;
   height: 120px;
@@ -44,10 +35,8 @@ h2 {
   width: 70px;
   height: 70px;
   margin-bottom: 27px;
-  margin-left: 50px;
+  margin-left: 20px;
 }
-
-
 
 /* Animation for Tech Icons */
 
@@ -59,7 +48,6 @@ h2 {
   transform: scale(1.2);
 }
 
-
 .tech-container img {
   transition: transform 0.5s ease;
 }
@@ -68,3 +56,14 @@ h2 {
   transform: scale(1.2);
 }
 
+/* @media all and (max-width: 600px) {
+  .tech-container {
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
+} */
+
+/* .tech-container {
+  width: 60%;
+} */
